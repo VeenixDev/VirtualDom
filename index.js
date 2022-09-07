@@ -55,9 +55,6 @@ const HELLO_WORLD_SPAN = new DOMNode(null, "span", "Hello World", {style: "backg
 const BODY_DIV = new DOMNode(BODY, "div", "UwU");
 BODY_DIV.addChildNode(HELLO_WORLD_SPAN);
 
-console.log(BODY_DIV.getChildNodes());
-return;
-
 const server = http.createServer((req, res) => res.end(DOM_ROOT.build(), "UTF-8", () => console.log("Request ended")));
 
 server.listen(80);
